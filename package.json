@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "axios": "^0.27.2",
     "sequelize": "^6.20.1",
     "sequelize-cli": "^6.4.1"
   },
