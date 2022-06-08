@@ -54,7 +54,7 @@ function CreatePost() {
             autocomplete="off"
             id="inputCreatePost"
             name="username"
-            placeholder="(Ex. Mynul436...)"
+            placeholder="(More than 3 and less than 15.Like Mynul436)"
           />
 
           <button type="submit"> Create Post</button>
