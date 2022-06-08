@@ -7,7 +7,7 @@ const validateToken = (req, res, next) => {
 
   try {
     const validToken = verify(accessToken, "importantsecret");
-
+    req.user = validToken;
     if (validToken) {
       return next();
     }
@@ -15,5 +15,7 @@ const validateToken = (req, res, next) => {
     return res.json({ error: err });
   }
 };
+
+module.exports = { validateToken };
 
 module.exports = { validateToken };
